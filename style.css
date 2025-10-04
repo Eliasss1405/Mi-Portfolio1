@@ -277,7 +277,7 @@ footer{
 /* Media query para móviles (ancho máximo 480px) */
 @media (max-width: 480px) {
     body {
-        width: 100%;
+        width: 480%;
         padding: 10px;
     }
 
