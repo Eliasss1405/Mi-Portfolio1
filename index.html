@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elias Valdez - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body onload="fecha()">
+    <!-- HEADER -->
+    <header class="header">
+        <nav>
+            <ul class="navegador">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#sobre-mi">Sobre Mi</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#referencias">Referencias</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <!-- SECCION INICIO -->
+        <section id="inicio" class="inicio">
+            <div class="foto">
+                <img src="./imgs/elio.jpeg" alt="Imagen mia">
+            </div>
+
+            <p class="fecha" id="fecha-actual"> </p>
+
+            <div class="presentacion">
+                <h1>¡Hola, <span>Bienvenido</span>!</h1>
+                <h2>Soy, <span>Elias Valdez</span></h2>
+                <p>¡Qué bueno tenerte por acá! <br>
+                    Me encanta compartir lo que hago y los proyectos en los que estoy trabajando. <br>
+                    Si querés, podés recorrer la web con tranquilidad y conocer más sobre mi trabajo. <br>
+                    Y si tenés una idea, una sugerencia o simplemente querés saludar, el formulario está abierto: ¡espero tu mensaje!
+                </p>
+            </div>
+        </section>
+
+        <!-- SECCION SOBRE MI -->
+        <section id="sobre-mi" class="cont-padre">
+            <h1>Sobre Mi</h1>
+
+            <div class="contenedor">
+                <!-- Sobre Mi -->
+                 <div class="card">
+                <h2>Sobre Mi</h2>
+                <div class="contenido">
+                    <p>
+                        Soy una persona curiosa y creativa,<br>con un gran interés por el aprendizaje continuo y el desarrollo personal. <br>
+                        Me apasiona resolver problemas de manera práctica y encontrar soluciones innovadoras,<br>
+                        al mismo tiempo que disfruto trabajar en equipo y compartir ideas. <br>
+                        Me considero responsable, perseverante y con una gran capacidad de adaptación a distintos entornos, <br>
+                        lo que me permite asumir nuevos desafíos con entusiasmo. <br>
+                        En mi tiempo libre me gusta explorar nuevas tecnologías, leer y mantenerme en constante crecimiento. <br>
+                        Mi objetivo es seguir desarrollándome tanto a nivel profesional como personal,<br>
+                        aportando valor en cada proyecto en el que participe. <br>
+                    </p>
+                </div>
+            </div>
+
+                <!-- Educación -->
+                 <div class="card">
+                <h2>Educación</h2>
+                <div class="contenido">
+                    <p>
+                        Actualmente soy estudiante de la carrera de Licenciatura en Ciencias de la Computación,<br>
+                        un camino académico que me permite fortalecer mis conocimientos en programación, estructuras de datos y algoritmos. <br>
+                        A lo largo de la formación he desarrollado interés por áreas como la inteligencia artificial, la optimización y el desarrollo de software, <br>
+                        lo que me motiva a seguir profundizando en estas temáticas. <br>
+                        Mi objetivo es aplicar los conocimientos adquiridos en proyectos innovadores y contribuir al avance de la tecnología desde una perspectiva creativa y responsable. 
+                    </p>
+                </div>
+             </div>  
+            </div>
+        </section>
+
+        <!-- SECCION CONTACTO -->
+        <section id="contacto" class="contacto">
+            <form class="formulario">
+                
+                <label for="nombre">Nombre: </label>
+                <input id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
+                <br>
+                <label for="email">Email: </label>
+                <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                <br>
+                <label for="mensaje">Mensaje</label>
+                <br>
+                <textarea name="mensaje" id="mensaje" placeholder="Ingrese su mensaje"></textarea>
+    
+                <br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- SECCION PROYECTOS -->
+        <section id="proyectos" class="cont-padre">
+            <h1>Proyectos</h1>
+
+            <div class="contenedor">
+
+                <div class="card">
+
+                    <img src="imgs/nike.jpg" alt="img1" class="img1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita soluta enim dignissimos earum, cum error dolores, pariatur iure illo totam, repellendus excepturi consequuntur suscipit distinctio quasi vitae repudiandae similique asperiores!</p>
+                </div>
+
+                
+                <div class="card">
+
+                    <img src="imgs/lacoste.jpg" alt="img2">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus provident distinctio mollitia sunt ad totam voluptate blanditiis dolorem voluptatibus! Id, beatae sunt nobis quis minima saepe vitae obcaecati quidem eum.</p>
+                    
+
+                </div>
+
+
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer id="referencias">
+        <div class="footer-top">
+            <p>Copyrigth 2025</p>
+            <p>@by Elias Valdez</p>
+        </div>
+        <div class="footer-bottom">
+        <p>-Elias es una persona que podes confiar con cualquier tipo de trabajo, ya que es muy desciplinada en lo que se le propone- Mariano Palacio</p>
+        </div>
+    </footer>
+
+    <!-- BOTON FLOTANTE -->
+    <button onclick="volver()" class="btn-flotante">Subir</button>
+
+    <!-- SCRIPT -->
+    <script src="java.js"></script>
+</body>
+</html>
